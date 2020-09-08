@@ -9,7 +9,6 @@ A **sinusoid** is a signal that has the form of the sine or cosine function
 ## 2-Sinusoids
 
 ### Definition
-
 $$
 v(t) = V_m\sin{\omega t}
 $$
@@ -44,3 +43,21 @@ where $\theta = \arctan{\frac{B}{A}}$
 
 ## 3-Phasors
 
+### Definition
+
+A **phasor** is a complex number that represents the amplitude and phase of a sinusoid
+
+$$
+z = x+jy= r\angle\phi=re^{j\phi}=r(\cos\phi+j\sin\phi)
+$$
+
+$$
+e^{\pm j\phi}=\cos\phi\pm j\sin \phi
+$$
+
+### Calculation
+
+$$
+\frac{\mathrm{d}v}{\mathrm{d}t}\longleftrightarrow j\omega V\\[2ex]
+\int{v\mathrm{d}t}\longleftrightarrow \frac{V}{j\omega}\\[2ex]
+$$

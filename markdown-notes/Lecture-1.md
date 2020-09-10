@@ -58,6 +58,34 @@ $$
 ### Calculation
 
 $$
+\begin{aligned}
 \frac{\mathrm{d}v}{\mathrm{d}t}\longleftrightarrow j\omega V\\[2ex]
 \int{v\mathrm{d}t}\longleftrightarrow \frac{V}{j\omega}\\[2ex]
+\end{aligned}
+$$
+
+### Phasors and Circuit Elements
+
+#### Inductor
+
+if the current in the inductor is $i(t)=I_m\cos(\omega t+\phi)$ then the voltage across it will be
+$$
+\begin{aligned}
+v = L\frac{\mathrm{d}i}{\mathrm{d}t}&=-\omega LI_m\sin(\omega t+\phi)\\[2ex]
+    &= \omega LI_m\cos(\omega t+\phi+90^\circ)
+\end{aligned}
+$$
+
+transforming as a phasor and take $I_m e^{j\phi}$ as $I$
+
+$$
+V = \omega LI_m e^{j(\phi+90^\circ)} = j\omega LI
+$$
+
+#### Conductor
+
+similarly since the current on the conductor is $C\frac{\mathrm{d}v}{\mathrm{d}t}$
+
+$$
+V = \frac{I}{j\omega C}
 $$

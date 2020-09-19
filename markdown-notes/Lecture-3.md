@@ -2,7 +2,7 @@
 
 [TOC]
 
-## 1 - Operational Amplifier
+## Operational Amplifier
 
 <img src = "../assets/L3-1.png" height = 200>
 
@@ -39,7 +39,7 @@ $$
 - $V_+ = V_-$: when an op amp operates in linear mode, the **difference in voltage** between the non-inverting (+) pin and the inverting (-) pin is **negligibly small**
 - $I_{in} = 0$: the **input impedance** between (+) and (-) pins is **much larger** than other resistances in the circuit [<sup>3</sup>](#refer-3)
 
-## 2 - Inverting Amplifier
+## Inverting Amplifier
 
 <div align = center><img src = "../assets/L3-4.png" height = 200></div>
 
@@ -50,7 +50,7 @@ $$
 \end{aligned}
 $$
 
-## 3 - Noninverting Amplifier
+## Noninverting Amplifier
 
 <div align = center><img src = "../assets/L3-5.png" height = 200></div>
 
@@ -69,7 +69,7 @@ $$
 \end{aligned}
 $$
 
-## 4 - Summing Amplifier
+## Summing Amplifier
 
 <div align = center><img src = "../assets/L3-7.png" height = 200></div>
 
@@ -80,7 +80,7 @@ $$
 \end{aligned}
 $$
 
-## 5 - Difference Amplifier
+## Difference Amplifier
 
 <div align = center><img src = "../assets/L3-8.png" height = 200></div>
 

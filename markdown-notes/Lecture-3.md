@@ -4,7 +4,7 @@
 
 ## Operational Amplifier
 
-<img src = "../assets/L3-1.png" height = 200>
+<div align = center><img src = "../assets/L3-1.png" height = 200></div>
 
 the amplifier's differential inputs consist of a non-inverting input(+) with voltage $V_+$ and an inverting input(-) with voltage $V_-$
 

@@ -2,7 +2,7 @@
 
 [TOC]
 
-## Node Analysis
+## 1 - Node Analysis
 
 - define node voltage
 - define node current ($I_{in}=I_{out}$)
@@ -49,7 +49,7 @@ $$
 \end{aligned}
 $$
 
-## Mesh Analysis
+## 2 - Mesh Analysis
 
 mesh analysis also works well for phasors
 
@@ -71,7 +71,7 @@ $$
 \end{aligned}
 $$
 
-## Superposition Theorem
+## 3 - Superposition Theorem
 
 since as circuits are **linear**, the superposition applies to ac circuits the same way it applies to dc circuits
 
@@ -105,7 +105,7 @@ $$
 
 Therefore the voltage is $1.05\cos(10t-86.24^\circ)+4.63\sin(5t-81.12^\circ)$
 
-## Source Transformation
+## 4 - Source Transformation
 
 ### Thevenin and Norton Equivalent Circuits
 

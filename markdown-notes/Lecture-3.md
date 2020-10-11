@@ -2,7 +2,7 @@
 
 [TOC]
 
-## Operational Amplifier
+## 1 - Operational Amplifier
 
 <div align = center><img src = "../assets/L3-1.png" height = 200></div>
 
@@ -39,7 +39,7 @@ $$
 - $V_+ = V_-$: when an op amp operates in linear mode, the **difference in voltage** between the non-inverting (+) pin and the inverting (-) pin is **negligibly small**
 - $I_{in} = 0$: the **input impedance** between (+) and (-) pins is **much larger** than other resistances in the circuit [<sup>3</sup>](#refer-3)
 
-## Operation Circuits
+## 2 - Operation Circuits
 
 ### Inverting Amplifier
 
@@ -96,7 +96,7 @@ $$
 \end{aligned}
 $$
 
-## Comparator Circuit
+## 3 - Comparator Circuit
 
 If we use operation amplifier as the comparator, there come two teo cases
 
@@ -130,7 +130,7 @@ $$
 \end{aligned}
 $$
 
-## Schmitt Trigger
+## 4 - Schmitt Trigger
 
 similarly, there two cases for the Schmitt Trigger
 
@@ -192,7 +192,7 @@ $$
 \end{aligned}
 $$
 
-## Reference
+## 5 - Reference
 
 <div id = "refer-1"></div>
 

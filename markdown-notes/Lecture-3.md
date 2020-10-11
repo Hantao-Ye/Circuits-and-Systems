@@ -39,7 +39,9 @@ $$
 - $V_+ = V_-$: when an op amp operates in linear mode, the **difference in voltage** between the non-inverting (+) pin and the inverting (-) pin is **negligibly small**
 - $I_{in} = 0$: the **input impedance** between (+) and (-) pins is **much larger** than other resistances in the circuit [<sup>3</sup>](#refer-3)
 
-## Inverting Amplifier
+## Operation Circuits
+
+### Inverting Amplifier
 
 <div align = center><img src = "../assets/L3-4.png" height = 200></div>
 
@@ -50,7 +52,7 @@ $$
 \end{aligned}
 $$
 
-## Noninverting Amplifier
+### Noninverting Amplifier
 
 <div align = center><img src = "../assets/L3-5.png" height = 200></div>
 
@@ -69,7 +71,7 @@ $$
 \end{aligned}
 $$
 
-## Summing Amplifier
+### Summing Amplifier
 
 <div align = center><img src = "../assets/L3-7.png" height = 200></div>
 
@@ -80,7 +82,7 @@ $$
 \end{aligned}
 $$
 
-## Difference Amplifier
+### Difference Amplifier
 
 <div align = center><img src = "../assets/L3-8.png" height = 200></div>
 
@@ -91,6 +93,102 @@ $$
         v_a = v_b =\frac{R_4}{R_3+R_4}v_2
     \end{cases}\Longrightarrow
     v_0 = \frac{R_2(1+R_1/R_2)}{R_1(1+R_3/R_4)}v_2-\frac{R_2}{R_1}v_1
+\end{aligned}
+$$
+
+## Comparator Circuit
+
+If we use operation amplifier as the comparator, there come two teo cases
+
+### Noninverting Op-Amp
+
+| ![circuits](../assets/L3-10.png) | ![currents](../assets/L3-9.png) |
+| :------------------------------: | :-----------------------------: |
+
+$$
+\begin{aligned}
+    V_O = 
+        \begin{cases}
+            +V_{\text{SAT}}\qquad V_i>V_{\text{ref}}\\[2ex]
+            -V_{\text{SAT}}\qquad V_i<V_{\text{ref}}
+        \end{cases}
+\end{aligned}
+$$
+
+### Inverting Op-Amp
+
+| ![circuits](../assets/L3-11.png) | ![currents](../assets/L3-12.png) |
+| :------------------------------: | :------------------------------: |
+
+$$
+\begin{aligned}
+    V_O = 
+        \begin{cases}
+            -V_{\text{SAT}}\qquad V_i>V_{\text{ref}}\\[2ex]
+            +V_{\text{SAT}}\qquad V_i<V_{\text{ref}}
+        \end{cases}
+\end{aligned}
+$$
+
+## Schmitt Trigger
+
+similarly, there two cases for the Schmitt Trigger
+
+### Basic Inverting Schmitt Trigger
+
+| ![circuits](../assets/L3-13.png) | ![currents](../assets/L3-14.png) |
+| :------------------------------: | :------------------------------: |
+
+- output voltage is high
+
+$$
+\begin{aligned}
+    V_O = 
+    \begin{cases}
+        V_{OH}\qquad V_I < \frac{R_1}{R_1+R_2}V_{OH}\\[2ex]
+        V_{OL}\qquad V_I > \frac{R_1}{R_1+R_2}V_{OH}
+    \end{cases}
+\end{aligned}
+$$
+
+- output voltage is low
+
+$$
+\begin{aligned}
+    V_O = 
+    \begin{cases}
+        V_{OL}\qquad V_I > \frac{R_1}{R_1+R_2}V_{OL}\\[2ex]
+        V_{OH}\qquad V_I < \frac{R_1}{R_1+R_2}V_{OL}
+    \end{cases}
+\end{aligned}
+$$
+
+### Noninverting Schmitt Trigger
+
+| ![circuits](../assets/L3-15.png) | ![currents](../assets/L3-16.png) |
+| :------------------------------: | :------------------------------: |
+
+- output voltage is high
+
+$$
+\begin{aligned}
+    V_O = 
+    \begin{cases}
+        V_{OH}\qquad V_I > -\frac{R_1}{R_2}V_{OH}\\[2ex]
+        V_{OL}\qquad V_I < -\frac{R_1}{R_2}V_{OH}
+    \end{cases}
+\end{aligned}
+$$
+
+- output voltage is low
+
+$$
+\begin{aligned}
+    V_O = 
+    \begin{cases}
+        V_{OL}\qquad V_I < -\frac{R_1}{R_2}V_{OL}\\[2ex]
+        V_{OH}\qquad V_I > -\frac{R_1}{R_2}V_{OL}
+    \end{cases}
 \end{aligned}
 $$
 

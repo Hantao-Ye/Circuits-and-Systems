@@ -1,15 +1,13 @@
-# Chapter 10 Sinusoidal Steady State Analysis
+# Part II Sinusoidal Steady State Analysis
 
-[TOC]
-
-## 10-1 Circuit Analysis
+## 2-1 Circuit Analysis
 
 ### Node Analysis
 
 - define node voltage
 - define node current ($I_{in}=I_{out}$)
 
-**EX 10-1**
+**EX 2-1**
 
 Using nodal analysis, find $v_1$ and $v_2$ in the following circuit
 
@@ -55,7 +53,7 @@ $$
 
 mesh analysis also works well for phasors
 
-**EX 10-2**
+**EX 2-2**
 
 Finding $I_0$ using mesh analysis
 
@@ -81,7 +79,7 @@ this theorem becomes important if the circuit has sources operating at different
 
 the total response must be obtained by adding the individual responses in the time domain
 
-**EX10-3**
+**EX2-3**
 
 Using superposition theorem to calculate $v_0$
 
@@ -114,7 +112,7 @@ Therefore the voltage is $1.05\cos(10t-86.24^\circ)+4.63\sin(5t-81.12^\circ)$
 
 ![figure-5](../assets/L2-5.png)
 
-**EX10-4**
+**EX2-4**
 
 Find the Thevenin equivalent at terminals a-b in the following circuit
 
@@ -129,7 +127,7 @@ $$
 $$
 
 
-## 10-2 Operational Amplifier
+## 2-2 Operational Amplifier
 
 <div align = center><img src = "../assets/L3-1.png" height = 200></div>
 
@@ -166,7 +164,7 @@ $$
 - $V_+ = V_-$: when an op amp operates in linear mode, the **difference in voltage** between the non-inverting (+) pin and the inverting (-) pin is **negligibly small**
 - $I_{in} = 0$: the **input impedance** between (+) and (-) pins is **much larger** than other resistances in the circuit [<sup>3</sup>](#refer-3)
 
-## 10-3 Operation Circuits
+## 2-3 Operation Circuits
 
 ### Inverting Amplifier
 
@@ -223,7 +221,7 @@ $$
 \end{aligned}
 $$
 
-## 10-4 Comparator Circuit
+## 2-4 Comparator Circuit
 
 If we use operation amplifier as the comparator, there come two teo cases
 
@@ -257,7 +255,7 @@ $$
 \end{aligned}
 $$
 
-## 10-5 Schmitt Trigger
+## 2-5 Schmitt Trigger
 
 similarly, there two cases for the Schmitt Trigger
 

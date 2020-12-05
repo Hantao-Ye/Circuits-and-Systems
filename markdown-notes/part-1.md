@@ -1,12 +1,10 @@
-# Chapter 9 Sinusoids and Phasors
-
-[TOC]
+# Part I Sinusoids and Phasors
 
 ## Introduction
 
 A **sinusoid** is a signal that has the form of the sine or cosine function
 
-## 9-1 Sinusoids
+## 1-1 Sinusoids
 
 ### Definition
 $$
@@ -41,7 +39,7 @@ $$
 
 where $\theta = \arctan{\frac{B}{A}}$
 
-## 9-2 Phasors
+## 1-2 Phasors
 
 ### Definition
 

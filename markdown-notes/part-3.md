@@ -1,8 +1,6 @@
-# Chapter 14 Frequency Response and Bode Plots
+# Part III Frequency Response and Bode Plots
 
-[TOC]
-
-## 14-1 Transfer Function
+## 3-1 Transfer Function
 
 ### Definition
 
@@ -34,7 +32,7 @@ $$
 - **zeros**: the *roots* of the numerator polynomial $\bold{N}(\omega)$
 - **poles**: the *roots* of the denominator polynomial $\bold{D}(\omega)$
 
-## 14-2 Decibel Scale and Bode Plots
+## 3-2 Decibel Scale and Bode Plots
 
 ### Decibel Scale
 
@@ -75,9 +73,9 @@ which combines several types of factors:
 |                          $\Big(1+\frac{j\omega}{z}\Big)^N$                          | ![magnitude](../assets/L4-7.png)  | ![phase](../assets/L4-8.png)  |
 |                             $\frac{1}{(1+j\omega/p)^N}$                             | ![magnitude](../assets/L4-9.png)  | ![phase](../assets/L4-10.png) |
 | $\Big[1+\frac{2j\omega\zeta}{\omega_n}+\big(\frac{j\omega}{\omega_n}\big)^2\Big]^N$ | ![magnitude](../assets/L4-11.png) | ![phase](../assets/L4-12.png) |
-|            $\frac{1}{[1+2j\omega\zeta/\omega_k+(j\omega/\omega_k)^2]^N}$            | ![magnitude](../assets/L4-13.png) | ![phase](../assets/L4-14.png) |
+|            $\frac{1}{[1+2j\omega\zeta/\omega_k+(j\omega/\omega_k)^2]^N}$            | ![magnitude](../assets/L4-13.png) | ![phase](../assets/L4-3.png) |
 
-## 14-3 Power Considerations
+## 3-3 Power Considerations
 
 ### Instantaneous Power
 
@@ -112,7 +110,7 @@ $$
 
 Therefore, $Z_L = R_{Th}-jX_{Th} = Z_{Th}^*$
 
-## 14-4 Series & Parallel Resonance
+## 3-4 Series & Parallel Resonance
 
 ### Series Resonance
 
@@ -154,7 +152,7 @@ $$
 B = \frac{R}{L} = \frac{\omega_0}{Q} = \omega_0^2CR
 $$
 
-## 14-5 Passive & Active Filters
+## 3-5 Passive & Active Filters
 
 ### Passive Filters
 

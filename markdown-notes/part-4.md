@@ -1,6 +1,6 @@
-# Chapter 15 Laplace Transform
+# Part IV Laplace Transform
 
-## 15-1 The Laplace Transform
+## 4-1 The Laplace Transform
 
 $$
 X(s) = \int_{0^-}^{\infty}{x(t)e^{-st}\mathrm{d}t}
@@ -8,11 +8,13 @@ $$
 
 which is called as the one-sided Laplace Transform
 
-## 15-2 Useful Equations and Properties Table
+## 4-2 Useful Equations and Properties Table
 
 $$
-\frac{\mathrm{d}}{\mathrm{d}t}x(t)\longleftrightarrow sX(s)-x(0^{-})\\[2ex]
-\frac{\mathrm{d}^2}{\mathrm{d}t^2}x(t)\longleftrightarrow s^2X(s)-sx(0^-)-x'(0^{-})\\[2ex]
+\begin{aligned}
+\frac{\mathrm{d}}{\mathrm{d}t}x(t)&\longleftrightarrow sX(s)-x(0^{-})\\[2ex]
+\frac{\mathrm{d}^2}{\mathrm{d}t^2}x(t)&\longleftrightarrow s^2X(s)-sx(0^-)-x'(0^{-})\\[2ex]
+\end{aligned}
 $$
 
 |           Aperiodic Signal           |            Fourier Signal            |                   Signal                    |                 Transform                  |     ROC     |
@@ -32,7 +34,7 @@ $$
 |                                      |                                      |     $[e^{-\alpha t}\cos\omega_0 t]u(t)$     | $\frac{s+\alpha}{(s+\alpha)^2+\omega_0^2}$ | $s>\alpha$  |
 |                                      |                                      |     $[e^{-\alpha t}\sin\omega_0 t]u(t)$     | $\frac{\omega_0}{(s+\alpha)^2+\omega_0^2}$ | $s>\alpha$  |
 
-## 15-3 The Inverse Laplace Transform
+## 4-3 The Inverse Laplace Transform
 
 Given $F(s)$, how do we transform it back to the time domain and obtain the corresponding $f(t)$
 
@@ -67,20 +69,20 @@ $$
 F(s) = \frac{A_1s+A_2}{s^2+as+b}=\frac{A_1(s+\alpha)}{(s+\alpha)^2+\beta^2}+\frac{B_1\beta}{(s+\alpha)^2+\beta^2}
 $$
 
-## 15-4 Initial and Final Value Theorems
+## 4-4 Initial and Final Value Theorems
 
 - Initial Value: $f(0)=\lim_{s\to\infty}{sF(s)}$
 - Final Value: $f(\infty)=\lim_{s\to0}{sF(s)}$
 
 > Final value theorem **fails** if the real part of pole is **non-negative**
 
-## 15-5 The Convolution Integral
+## 4-5 The Convolution Integral
 
 $$
 y(t)=\int{x(\tau)h(t-\tau)\mathrm{d}\tau}\overset{L}{\Longleftrightarrow}Y(s)=X(s)H(s)
 $$
 
-## 15-6 Applications of Laplace Transform
+## 4-6 Applications of Laplace Transform
 
 - Resistor: $Z(s)=R$
 - Inductor: $Z(s)=sL$

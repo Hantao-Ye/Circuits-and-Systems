@@ -38,7 +38,8 @@ $$
 
 $$
 \begin{aligned}
-    G_{dB} &= 10\log_{10}{\frac{P_2}{P_1}}= 10\log_{10}{\frac{V_2^2/R_2}{V_1^2/R_1}}\\[2ex]
+    G_{dB} &= 10\log_{10}{\frac{P_2}{P_1}}\\[2ex]
+           &= 10\log_{10}{\frac{V_2^2/R_2}{V_1^2/R_1}}\\[2ex]
            &= 10\log_{10}{\Big(\frac{V_2}{V_1}\Big)^2}-10\log_{10}{\frac{R_1}{R_2}}\\[2ex]
            &= 20\log_{10}{\frac{V_1}{V_2}}-10\log_{10}{\frac{R_1}{R_2}}
 \end{aligned}
@@ -73,7 +74,7 @@ which combines several types of factors:
 |                          $\Big(1+\frac{j\omega}{z}\Big)^N$                          | ![magnitude](../assets/L4-7.png)  | ![phase](../assets/L4-8.png)  |
 |                             $\frac{1}{(1+j\omega/p)^N}$                             | ![magnitude](../assets/L4-9.png)  | ![phase](../assets/L4-10.png) |
 | $\Big[1+\frac{2j\omega\zeta}{\omega_n}+\big(\frac{j\omega}{\omega_n}\big)^2\Big]^N$ | ![magnitude](../assets/L4-11.png) | ![phase](../assets/L4-12.png) |
-|            $\frac{1}{[1+2j\omega\zeta/\omega_k+(j\omega/\omega_k)^2]^N}$            | ![magnitude](../assets/L4-13.png) | ![phase](../assets/L4-3.png) |
+|            $\frac{1}{[1+2j\omega\zeta/\omega_k+(j\omega/\omega_k)^2]^N}$            | ![magnitude](../assets/L4-13.png) | ![phase](../assets/L4-14.png) |
 
 ## 3-3 Power Considerations
 
@@ -108,7 +109,19 @@ $$
 \end{cases}
 $$
 
-Therefore, $Z_L = R_{Th}-jX_{Th} = Z_{Th}^*$
+Therefore, $Z_L = R_{Th}-jX_{Th} = Z_{Th}^*$, and the maximum power is
+
+$$
+P_{max} = \frac{\|V_{Th}\|^2}{8R_{Th}}
+$$
+
+Specifically, if the load is purely real, $X_L=0$, then the maximum power is
+
+$$
+P_{max} = \frac{\|V_{th}^2\|}{4(R_L+R_{Th})}
+$$
+
+where $R_L=\sqrt{R_{Th}^2+X_{Th}^2}$
 
 ## 3-4 Series & Parallel Resonance
 
@@ -126,7 +139,7 @@ $$
 \omega_0 = \frac{1}{\sqrt{LC}}\qquad f_0=\frac{1}{2\pi \sqrt{LC}}
 $$
 
-### Bandwidth
+#### Bandwidth
 
 Half-power frequencies $\omega_1$ and $\omega_2$ are frequencies at which the dissipated power is **half the maximum value**
 
@@ -137,10 +150,10 @@ $$
 where we can find
 
 $$
-\omega_0 =\sqrt{\omega_1\omega_2}\qquad B = \omega_2-\omega_1
+\omega_0 =\sqrt{\omega_1\omega_2}\qquad B = \omega_2-\omega_1 = \frac{R}{L}
 $$
 
-### Quality Factor
+#### Quality Factor
 
 $$
 Q = \frac{\omega_0L}{R} = \frac{1}{\omega_0CR}
@@ -150,6 +163,32 @@ and the relationship between the $B$, $Q$ and $\omega_0$
 
 $$
 B = \frac{R}{L} = \frac{\omega_0}{Q} = \omega_0^2CR
+$$
+
+### Parallel Resonance
+
+<img height = 200 src = "../assets/L4-27.png">
+
+$$
+Y=\frac{1}{R}+j(\omega C-\frac{1}{\omega L})
+$$
+
+similarly, the resonance happens when the circuit is purely resistive
+
+$$
+\omega_0 = \frac{1}{\sqrt{LC}}
+$$
+
+where the bandwidth becomes
+
+$$
+B= \omega_2-\omega_1 = \frac{1}{RC}\qquad Q = \frac{\omega_0}{B}=\omega_0RC=\frac{R}{\omega_0L}
+$$
+
+### Relationship Between Series and Parallel
+
+$$
+V\Leftrightarrow I\qquad L\Leftrightarrow C\qquad R \Leftrightarrow \frac{1}{R}
 $$
 
 ## 3-5 Passive & Active Filters

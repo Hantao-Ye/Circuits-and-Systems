@@ -5,32 +5,32 @@
 ### Definition
 
 $$
-\bold{H}(\omega) = \frac{\bold{Y}(\omega)}{\bold{X}(\omega)}
+\mathbf{H}(\omega) = \frac{\mathbf{Y}(\omega)}{\mathbf{X}(\omega)}
 $$
 
-the transfer function $\bold{H}(\omega)$ of a circuit is the frequency-dependent ratio of a phasor output $\bold{Y}(\omega)$ to a phasor input $\bold{X}(\omega)$
+the transfer function $\mathbf{H}(\omega)$ of a circuit is the frequency-dependent ratio of a phasor output $\mathbf{Y}(\omega)$ to a phasor input $\mathbf{X}(\omega)$
 
 since the input and output can be either voltage  or current at any place in the circuit, there are four possible transfer functions
 
 $$
 \begin{aligned}
-    H(\omega) &= \text{Voltage Gain}=\frac{V_O(\omega)}{V_i(\omega)}\\[2ex]
-    H(\omega) &= \text{Current Gain}=\frac{I_O(\omega)}{I_i(\omega)}\\[2ex]
-    H(\omega) &= \text{Transfer Impedance}=\frac{V_O(\omega)}{I_i(\omega)}\\[2ex]
-    H(\omega) &= \text{Transfer Admittance}=\frac{I_O(\omega)}{V_i(\omega)}\\[2ex]
+    H(\omega) &= \text{Voltage Gain}=\frac{V_O(\omega)}{V_i(\omega)}\\
+    H(\omega) &= \text{Current Gain}=\frac{I_O(\omega)}{I_i(\omega)}\\
+    H(\omega) &= \text{Transfer Impedance}=\frac{V_O(\omega)}{I_i(\omega)}\\
+    H(\omega) &= \text{Transfer Admittance}=\frac{I_O(\omega)}{V_i(\omega)}
 \end{aligned}
 $$
 
 ### Zeros and Poles
 
-the transfer function $\bold{H}(\omega)$ can also be expressed in terms of its numerator polynomial $\bold{N}(\omega)$ and denominator polynomial $\bold{D}(\omega)$
+the transfer function $\mathbf{H}(\omega)$ can also be expressed in terms of its numerator polynomial $\mathbf{N}(\omega)$ and denominator polynomial $\mathbf{D}(\omega)$
 
 $$
-\bold{H}(\omega) = \frac{\bold{N}(\omega)}{\bold{D}(\omega)}
+\mathbf{H}(\omega) = \frac{\mathbf{N}(\omega)}{\mathbf{D}(\omega)}
 $$
 
-- **zeros**: the *roots* of the numerator polynomial $\bold{N}(\omega)$
-- **poles**: the *roots* of the denominator polynomial $\bold{D}(\omega)$
+- **zeros**: the *roots* of the numerator polynomial $\mathbf{N}(\omega)$
+- **poles**: the *roots* of the denominator polynomial $\mathbf{D}(\omega)$
 
 ## 3-2 Decibel Scale and Bode Plots
 
@@ -38,17 +38,17 @@ $$
 
 $$
 \begin{aligned}
-    G_{dB} &= 10\log_{10}{\frac{P_2}{P_1}}\\[2ex]
-           &= 10\log_{10}{\frac{V_2^2/R_2}{V_1^2/R_1}}\\[2ex]
-           &= 10\log_{10}{\Big(\frac{V_2}{V_1}\Big)^2}-10\log_{10}{\frac{R_1}{R_2}}\\[2ex]
-           &= 20\log_{10}{\frac{V_1}{V_2}}-10\log_{10}{\frac{R_1}{R_2}}
+    G_{dB} &= 10\log_{10}{\frac{P_2}{P_1}}\\
+           &= 10\log_{10}{\frac{V_2^2/R_2}{V_1^2/R_1}}\\
+           &= 10\log_{10}{\Big(\frac{V_2}{V_1}\Big)^2}-10\log_{10}{\frac{R_1}{R_2}}\\
+           &= 20\log_{10}{\frac{V_2}{V_1}}-10\log_{10}{\frac{R_1}{R_2}}
 \end{aligned}
 $$
 
-for the case when $R_1 = R_2$, we can get the basic equation 
+for the case when $R_1 = R_2$, we can get the basic equation
 
 $$
-G_{dB} = 20\log_{10}{\frac{V_1}{V_2}}
+G_{dB} = 20\log_{10}{\frac{V_2}{V_1}}
 $$
 
 ### Bode Plots
@@ -56,7 +56,7 @@ $$
 one transfer function could be written in terms of factors that have real and imaginary parts
 
 $$
-\bold{H}(j\omega) = \frac{K(j\omega)^{\pm 1}(1+j\omega/z_1)[1+j2\zeta\omega/\omega_k+(j\omega/\omega_k)^2]\cdots}{(1+j\omega/p_1)[1+j2\zeta_2\omega/\omega_n+(j\omega/\omega_n)^2]\cdots}
+\mathbf{H}(j\omega) = \frac{K(j\omega)^{\pm 1}(1+j\omega/z_1)[1+j2\zeta\omega/\omega_k+(j\omega/\omega_k)^2]\cdots}{(1+j\omega/p_1)[1+j2\zeta_2\omega/\omega_n+(j\omega/\omega_n)^2]\cdots}
 $$
 
 which combines several types of factors:
@@ -94,7 +94,7 @@ $$
 
 ### Maximum Average Power Transfer
 
-<div align = center><img src = "../assets/L4-15.png"></div>
+<div align="center"><img src="../assets/L4-15.png"></div>
 
 $$
 P = \frac{1}{2}|I|^2R_L=\frac{|V_{Th}|^2R_L/2}{(R_{Th}+R_L)^2+(X_{Th}+X_L)^2}
@@ -104,21 +104,21 @@ How to adjust the load parameters $R_L$ and $X_L$ so that **P is maximum**
 
 $$
 \begin{cases}
-    X_L = -X_{Th}\\[2ex]
+    X_L = -X_{Th}\\
     R_L = \sqrt{R_{Th}^2+(X_{Th}+X_L)^2}
 \end{cases}
 $$
 
-Therefore, $Z_L = R_{Th}-jX_{Th} = Z_{Th}^*$, and the maximum power is
+Therefore, $Z_L = R_{Th}-jX_{Th} = Z_{Th}^\ast$, and the maximum power is
 
 $$
-P_{max} = \frac{\|V_{Th}\|^2}{8R_{Th}}
+P_{max} = \frac{\lvert V_{Th}\rvert^2}{8R_{Th}}
 $$
 
 Specifically, if the load is purely real, $X_L=0$, then the maximum power is
 
 $$
-P_{max} = \frac{\|V_{th}^2\|}{4(R_L+R_{Th})}
+P_{max} = \frac{\lvert V_{Th}\rvert^2}{4(R_L+R_{Th})}
 $$
 
 where $R_L=\sqrt{R_{Th}^2+X_{Th}^2}$
@@ -167,7 +167,7 @@ $$
 
 ### Parallel Resonance
 
-<img height = 200 src = "../assets/L4-27.png">
+<img height="200" src="../assets/L4-27.png">
 
 $$
 Y=\frac{1}{R}+j(\omega C-\frac{1}{\omega L})

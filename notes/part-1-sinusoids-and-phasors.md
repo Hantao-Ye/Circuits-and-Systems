@@ -7,11 +7,12 @@ A **sinusoid** is a signal that has the form of the sine or cosine function
 ## 1-1 Sinusoids
 
 ### Definition
+
 $$
 v(t) = V_m\sin{\omega t}
 $$
 
-<div align = center><img src = "/assets/L1-1.png"></div>
+<div align="center"><img src="../assets/L1-1.png"></div>
 
 - $\omega = \frac{2\pi}{T}$
 - $T = \frac{2\pi}{\omega}$
@@ -23,11 +24,13 @@ sinusoids are periodic, which implies $v(t+T) = v(t)$
 ### Phase
 
 $$
-v_1(t) = V_m\sin{\omega t}
+\begin{gathered}
+v_1(t) = V_m\sin{\omega t}\\
 v_2(t) = V_m\sin{(\omega t+\phi)}
+\end{gathered}
 $$
 
-<div align = center><img src = "/assets/L1-2.png"></div>
+<div align="center"><img src="../assets/L1-2.png"></div>
 
 where $\phi$ is the **phase**
 
@@ -57,8 +60,8 @@ $$
 
 $$
 \begin{aligned}
-\frac{\mathrm{d}v}{\mathrm{d}t}\longleftrightarrow j\omega V\\[2ex]
-\int{v\mathrm{d}t}\longleftrightarrow \frac{V}{j\omega}\\[2ex]
+\frac{\mathrm{d}v}{\mathrm{d}t}\longleftrightarrow j\omega V\\
+\int{v\mathrm{d}t}\longleftrightarrow \frac{V}{j\omega}
 \end{aligned}
 $$
 
@@ -67,9 +70,10 @@ $$
 #### Inductor
 
 if the current in the inductor is $i(t)=I_m\cos(\omega t+\phi)$ then the voltage across it will be
+
 $$
 \begin{aligned}
-v = L\frac{\mathrm{d}i}{\mathrm{d}t}&=-\omega LI_m\sin(\omega t+\phi)\\[2ex]
+v = L\frac{\mathrm{d}i}{\mathrm{d}t}&=-\omega LI_m\sin(\omega t+\phi)\\
     &= \omega LI_m\cos(\omega t+\phi+90^\circ)
 \end{aligned}
 $$

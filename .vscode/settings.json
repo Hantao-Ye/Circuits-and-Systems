@@ -1,8 +1,17 @@
 {
     "cSpell.words": [
-        "Carmer's",
+        "Cramer's",
+        "KaTeX",
+        "MathJax",
         "Noninverting",
+        "Schmitt",
         "Thevenin",
-        "longleftrightarrow"
+        "atop",
+        "gathered",
+        "lbrace",
+        "longleftrightarrow",
+        "lvert",
+        "rvert",
+        "substack"
     ]
 }

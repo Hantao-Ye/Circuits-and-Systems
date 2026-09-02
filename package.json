@@ -1,0 +1,26 @@
+{
+  "name": "circuits-and-systems-notes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Lecture notes on Circuits and Systems: portable-math Markdown with a renderer checker and HTML/PDF build",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "node scripts/check-math.mjs",
+    "test": "node --test scripts/*.test.mjs",
+    "build:html": "node scripts/build.mjs --html",
+    "build:pdf": "node scripts/build.mjs --html --pdf",
+    "build": "npm run check && node scripts/build.mjs --html --pdf",
+    "clean": "rm -rf build"
+  },
+  "devDependencies": {
+    "@vscode/markdown-it-katex": "1.1.2",
+    "github-markdown-css": "5.9.0",
+    "katex": "0.18.5",
+    "markdown-it": "15.0.1",
+    "markdown-it-anchor": "9.2.1",
+    "mathjax-full": "3.2.2"
+  }
+}
